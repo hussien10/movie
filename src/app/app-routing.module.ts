@@ -14,8 +14,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [{
-  path:"home",component:HomeComponent
-},
+  path:"home",component:HomeComponent},
 {path:"",redirectTo:"home",pathMatch:"full"},
 {path:"movies",canActivate:[AuthGuard],component:MoviesComponent},
 {path:"tv",canActivate:[AuthGuard],component:TvComponent},
